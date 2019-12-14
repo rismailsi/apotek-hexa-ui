@@ -1,0 +1,8 @@
+ui:
+    build: .
+    dockerfile: Dockerfile.dev
+    working_dir: /usr/src/app
+    volumes:
+      - ./:/usr/src/app
+    ports:
+      - "80:80"

@@ -1,0 +1,14 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <button mat-icon-button>
+      <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+    </button>
+    <h1>Apotek Hexa</h1>
+    <span class="menu-spacer"></span>
+    <div class="menu-wr">
+      <a mat-button [routerLink]="'/products'" routerLinkActive="active"> Products </a>
+      <a mat-button [routerLink]="'/good-receipt'"> Good Receipt </a>
+      <a mat-button [routerLink]="'/sales'"> Sales </a>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
