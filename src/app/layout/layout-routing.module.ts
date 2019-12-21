@@ -12,12 +12,16 @@ const routes: Routes = [
         loadChildren: '../modules/product/product.module#ProductModule'
       },
       {
-        path: 'good-receipts',
-        loadChildren: '../modules/product/product.module#GoodReceiptModule'
+        path: 'purchasing',
+        loadChildren: '../modules/purchasing/purchasing.module#PurchasingModule'
+      },
+      {
+        path: 'receiving',
+        loadChildren: '../modules/receiving/receiving.module#ReceivingModule'
       },
       {
         path: 'sales',
-        loadChildren: '../modules/product/product.module#SalesModule'
+        loadChildren: '../modules/sales/sales.module#SalesModule'
       },
     ]
   }];
